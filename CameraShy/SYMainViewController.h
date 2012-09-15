@@ -8,7 +8,7 @@
 
 #import "SYFlipsideViewController.h"
 
-@interface SYMainViewController : UIViewController <SYFlipsideViewControllerDelegate, UIPopoverControllerDelegate>
+@interface SYMainViewController : UIViewController <SYFlipsideViewControllerDelegate, UIPopoverControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
 

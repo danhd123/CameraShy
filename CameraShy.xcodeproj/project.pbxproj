@@ -22,6 +22,11 @@
 		BCF8E892160314F300AB5428 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF8E86D160314F200AB5428 /* Foundation.framework */; };
 		BCF8E89A160314F300AB5428 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCF8E898160314F300AB5428 /* InfoPlist.strings */; };
 		BCF8E89D160314F300AB5428 /* CameraShyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8E89C160314F300AB5428 /* CameraShyTests.m */; };
+		BCF8E8AA1604878800AB5428 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF8E8A81604876B00AB5428 /* CoreFoundation.framework */; };
+		BCF8E8B0160487F500AB5428 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF8E8AE160487E800AB5428 /* MobileCoreServices.framework */; };
+		BCF8E8B2160488BC00AB5428 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF8E8B1160488BC00AB5428 /* Security.framework */; };
+		BCF8E8B716048C8700AB5428 /* NSData+Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8E8B616048C8700AB5428 /* NSData+Encryption.m */; };
+		BCF8E8B816048C8700AB5428 /* NSData+Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8E8B616048C8700AB5428 /* NSData+Encryption.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,24 +44,29 @@
 		BCF8E86B160314F200AB5428 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BCF8E86D160314F200AB5428 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BCF8E86F160314F200AB5428 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		BCF8E873160314F200AB5428 /* CameraShy-Info.plist */ = {isa = PBXFileReference; path = "CameraShy-Info.plist"; sourceTree = "<group>"; };
+		BCF8E873160314F200AB5428 /* CameraShy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CameraShy-Info.plist"; sourceTree = "<group>"; };
 		BCF8E875160314F200AB5428 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BCF8E877160314F200AB5428 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BCF8E879160314F200AB5428 /* CameraShy-Prefix.pch */ = {isa = PBXFileReference; path = "CameraShy-Prefix.pch"; sourceTree = "<group>"; };
-		BCF8E87A160314F200AB5428 /* SYAppDelegate.h */ = {isa = PBXFileReference; path = SYAppDelegate.h; sourceTree = "<group>"; };
+		BCF8E879160314F200AB5428 /* CameraShy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CameraShy-Prefix.pch"; sourceTree = "<group>"; };
+		BCF8E87A160314F200AB5428 /* SYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYAppDelegate.h; sourceTree = "<group>"; };
 		BCF8E87B160314F200AB5428 /* SYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYAppDelegate.m; sourceTree = "<group>"; };
 		BCF8E87E160314F300AB5428 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		BCF8E881160314F300AB5428 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		BCF8E883160314F300AB5428 /* SYMainViewController.h */ = {isa = PBXFileReference; path = SYMainViewController.h; sourceTree = "<group>"; };
+		BCF8E883160314F300AB5428 /* SYMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYMainViewController.h; sourceTree = "<group>"; };
 		BCF8E884160314F300AB5428 /* SYMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYMainViewController.m; sourceTree = "<group>"; };
-		BCF8E886160314F300AB5428 /* SYFlipsideViewController.h */ = {isa = PBXFileReference; path = SYFlipsideViewController.h; sourceTree = "<group>"; };
+		BCF8E886160314F300AB5428 /* SYFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYFlipsideViewController.h; sourceTree = "<group>"; };
 		BCF8E887160314F300AB5428 /* SYFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYFlipsideViewController.m; sourceTree = "<group>"; };
 		BCF8E88E160314F300AB5428 /* CameraShyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraShyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF8E88F160314F300AB5428 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		BCF8E897160314F300AB5428 /* CameraShyTests-Info.plist */ = {isa = PBXFileReference; path = "CameraShyTests-Info.plist"; sourceTree = "<group>"; };
+		BCF8E897160314F300AB5428 /* CameraShyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CameraShyTests-Info.plist"; sourceTree = "<group>"; };
 		BCF8E899160314F300AB5428 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BCF8E89B160314F300AB5428 /* CameraShyTests.h */ = {isa = PBXFileReference; path = CameraShyTests.h; sourceTree = "<group>"; };
+		BCF8E89B160314F300AB5428 /* CameraShyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraShyTests.h; sourceTree = "<group>"; };
 		BCF8E89C160314F300AB5428 /* CameraShyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraShyTests.m; sourceTree = "<group>"; };
+		BCF8E8A81604876B00AB5428 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		BCF8E8AE160487E800AB5428 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BCF8E8B1160488BC00AB5428 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BCF8E8B516048C8700AB5428 /* NSData+Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Encryption.h"; sourceTree = "<group>"; };
+		BCF8E8B616048C8700AB5428 /* NSData+Encryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Encryption.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF8E8B2160488BC00AB5428 /* Security.framework in Frameworks */,
+				BCF8E8B0160487F500AB5428 /* MobileCoreServices.framework in Frameworks */,
+				BCF8E8AA1604878800AB5428 /* CoreFoundation.framework in Frameworks */,
 				BCF8E86C160314F200AB5428 /* UIKit.framework in Frameworks */,
 				BCF8E86E160314F200AB5428 /* Foundation.framework in Frameworks */,
 				BCF8E870160314F200AB5428 /* CoreGraphics.framework in Frameworks */,
@@ -105,6 +118,9 @@
 		BCF8E86A160314F200AB5428 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BCF8E8B1160488BC00AB5428 /* Security.framework */,
+				BCF8E8AE160487E800AB5428 /* MobileCoreServices.framework */,
+				BCF8E8A81604876B00AB5428 /* CoreFoundation.framework */,
 				BCF8E86B160314F200AB5428 /* UIKit.framework */,
 				BCF8E86D160314F200AB5428 /* Foundation.framework */,
 				BCF8E86F160314F200AB5428 /* CoreGraphics.framework */,
@@ -116,6 +132,8 @@
 		BCF8E871160314F200AB5428 /* CameraShy */ = {
 			isa = PBXGroup;
 			children = (
+				BCF8E8B516048C8700AB5428 /* NSData+Encryption.h */,
+				BCF8E8B616048C8700AB5428 /* NSData+Encryption.m */,
 				BCF8E87A160314F200AB5428 /* SYAppDelegate.h */,
 				BCF8E87B160314F200AB5428 /* SYAppDelegate.m */,
 				BCF8E87D160314F300AB5428 /* MainStoryboard_iPhone.storyboard */,
@@ -272,6 +290,7 @@
 				BCF8E87C160314F200AB5428 /* SYAppDelegate.m in Sources */,
 				BCF8E885160314F300AB5428 /* SYMainViewController.m in Sources */,
 				BCF8E888160314F300AB5428 /* SYFlipsideViewController.m in Sources */,
+				BCF8E8B716048C8700AB5428 /* NSData+Encryption.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCF8E89D160314F300AB5428 /* CameraShyTests.m in Sources */,
+				BCF8E8B816048C8700AB5428 /* NSData+Encryption.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +402,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CameraShy/CameraShy-Prefix.pch";
 				INFOPLIST_FILE = "CameraShy/CameraShy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +417,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CameraShy/CameraShy-Prefix.pch";
 				INFOPLIST_FILE = "CameraShy/CameraShy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
