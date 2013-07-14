@@ -29,6 +29,7 @@
 		BCC9A49F179298FC00E2AFB2 /* SYUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9A49E179298FC00E2AFB2 /* SYUserDefaults.m */; };
 		BCC9A4A0179298FC00E2AFB2 /* SYUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9A49E179298FC00E2AFB2 /* SYUserDefaults.m */; };
 		BCCC30031792FA1D001B3FEE /* SYDecryptedImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCC30021792FA1D001B3FEE /* SYDecryptedImageViewController.m */; };
+		BCCC300617932C0C001B3FEE /* SYAntiScreenshotView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCC300517932C0B001B3FEE /* SYAntiScreenshotView.m */; };
 		BCF8E86C160314F200AB5428 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF8E86B160314F200AB5428 /* UIKit.framework */; };
 		BCF8E86E160314F200AB5428 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF8E86D160314F200AB5428 /* Foundation.framework */; };
 		BCF8E870160314F200AB5428 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF8E86F160314F200AB5428 /* CoreGraphics.framework */; };
@@ -88,6 +89,8 @@
 		BCC9A49E179298FC00E2AFB2 /* SYUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYUserDefaults.m; sourceTree = "<group>"; };
 		BCCC30011792FA1D001B3FEE /* SYDecryptedImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDecryptedImageViewController.h; sourceTree = "<group>"; };
 		BCCC30021792FA1D001B3FEE /* SYDecryptedImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYDecryptedImageViewController.m; sourceTree = "<group>"; };
+		BCCC300417932C0B001B3FEE /* SYAntiScreenshotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAntiScreenshotView.h; sourceTree = "<group>"; };
+		BCCC300517932C0B001B3FEE /* SYAntiScreenshotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAntiScreenshotView.m; sourceTree = "<group>"; };
 		BCF8E867160314F200AB5428 /* CameraShy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraShy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF8E86B160314F200AB5428 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BCF8E86D160314F200AB5428 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -244,6 +247,8 @@
 				BCF8E887160314F300AB5428 /* SYFlipsideViewController.m */,
 				BCCC30011792FA1D001B3FEE /* SYDecryptedImageViewController.h */,
 				BCCC30021792FA1D001B3FEE /* SYDecryptedImageViewController.m */,
+				BCCC300417932C0B001B3FEE /* SYAntiScreenshotView.h */,
+				BCCC300517932C0B001B3FEE /* SYAntiScreenshotView.m */,
 				BCF8E872160314F200AB5428 /* Supporting Files */,
 				BCC9A499179297C300E2AFB2 /* NSString+UUID.h */,
 				BCC9A49A179297C300E2AFB2 /* NSString+UUID.m */,
@@ -401,6 +406,7 @@
 				BCC9A49B179297C300E2AFB2 /* NSString+UUID.m in Sources */,
 				BCC9A49F179298FC00E2AFB2 /* SYUserDefaults.m in Sources */,
 				BCCC30031792FA1D001B3FEE /* SYDecryptedImageViewController.m in Sources */,
+				BCCC300617932C0C001B3FEE /* SYAntiScreenshotView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

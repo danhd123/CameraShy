@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.imageView removeFromSuperview];
 	// Do any additional setup after loading the view.
 }
 

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SYDecryptedImageViewController : UIViewController
+@interface SYDecryptedImageViewController : UIViewController <UIGestureRecognizerDelegate>
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
+@property (nonatomic, weak) IBOutlet UIGestureRecognizer *tapRecognizer;
 - (IBAction)done:(id)sender;
 @end
