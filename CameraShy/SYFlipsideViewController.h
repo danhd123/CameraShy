@@ -17,6 +17,8 @@
 @interface SYFlipsideViewController : UIViewController
 
 @property (weak, nonatomic) id <SYFlipsideViewControllerDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UITextField *urlField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
 
 - (IBAction)done:(id)sender;
 

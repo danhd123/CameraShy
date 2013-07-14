@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>R1NavigationBarButtonTextColor</key>
+	<string>0x46464b</string>
+	<key>R1NavigationBarButtonShadowColor</key>
+	<string>0xFFFFFF</string>
+	<key>R1NavigationBarButtonShadowOffset</key>
+	<string>{0.5,0.5}</string>
+	<key>R1NavigationBarButtonFontSize</key>
+	<string>12</string>
+	<key>R1NavigationBarTitleTextColor</key>
+	<string>0x46464b</string>
+	<key>R1NavigationBarTitleShadowColor</key>
+	<string>0xFFFFFF</string>
+	<key>R1NavigationBarTitleShadowOffset</key>
+	<string>{0.5,0.5}</string>
+	<key>R1NavigationBarTitleFontSize</key>
+	<integer>15</integer>
+</dict>
+</plist>

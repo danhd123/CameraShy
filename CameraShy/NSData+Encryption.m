@@ -31,8 +31,14 @@ const NSUInteger kPBKDFRounds = 10000;  // ~80ms on an iPhone 4
     NSAssert(salt, @"salt must not be NULL");
     NSAssert(iv != salt, @"Don't be stupid");
     
-    *iv = [self randomDataOfLength:kAlgorithmIVSize];
-    *salt = [self randomDataOfLength:kPBKDFSaltSize];
+    if (*iv == nil)
+    {
+        *iv = [self randomDataOfLength:kAlgorithmIVSize];
+    }
+    if (*salt == nil)
+    {
+        *salt = [self randomDataOfLength:kPBKDFSaltSize]; //this may be a bad idea
+    }
     
     NSData *key = [self AESKeyForPassword:password salt:*salt];
     

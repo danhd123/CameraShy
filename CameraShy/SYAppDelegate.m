@@ -7,6 +7,10 @@
 //
 
 #import "SYAppDelegate.h"
+#import "SYUserDefaults.h"
+#import "NSString+UUID.h"
+#import <AWSRuntime/AWSRuntime.h>
+
 
 @implementation SYAppDelegate
 
@@ -14,7 +18,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    if ([[NSUserDefaults standardUserDefaults] stringForKey:SYUserDefaultsBucketName] == nil)
+    {
+        NSString *uuidString = nil;
+        if ([NSUUID class] != nil)
+        {
+            uuidString = [[NSUUID UUID] UUIDString];
+        }
+        else
+        {
+            uuidString = [NSString generatedNewUUID];
+        }
+        [[NSUserDefaults standardUserDefaults] setObject:uuidString forKey:SYUserDefaultsBucketName];
+    }
+    [[R1PhotoEffectsSDK sharedManager] enableWithClientID:@"b346cd30-ce36-0130-2262-22000afc0b0e"];
+    [AmazonErrorHandler shouldNotThrowExceptions];
+    [AmazonLogger verboseLogging];
     return YES;
 }
 							
